@@ -3,7 +3,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentRepository;
-import com.example.demo.service.StudentEntity;
+import com.example.demo.entity.StudentEntity;
  
 @Service
 
