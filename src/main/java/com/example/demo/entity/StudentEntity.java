@@ -24,20 +24,20 @@ public void setName(String name){
 public String getEmail(){
     return email;
 }
-public void setEmail(){
+public void setEmail(String email){
     this.email=email;
 }
 public String getPassword(){
     return password;
 }
-public void setPassword(){
+public void setPassword(String password){
     this.passowrd=password;
 }
 public String getDate(){
     return date;
 }
-public void setDate(){
-    this.date=date;
+public void setDate(Date created){
+    this.created=created;
 }
 
 
