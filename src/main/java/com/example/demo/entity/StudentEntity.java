@@ -36,7 +36,7 @@ public String getPassword(){
     return password;
 }
 public void setPassword(String password){
-    this.passowrd=password;
+    this.password=password;
 }
 public String getDate(){
     return date;
@@ -49,7 +49,15 @@ public StudentEntity(){
     
 
 } 
-public StudentEntity(Integer id,String name,)
+public StudentEntity(Integer id,String name,String email,String passowrd,Date created){
+      this.id=id;
+      this.name=name;
+      this.email=email;
+      this.passowrd=password;
+      this.created=created;
+}
+
+}
 
 
 
