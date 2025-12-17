@@ -12,20 +12,32 @@ private Date created;
 public Integer getId(){
     return id;
 }
-public void setId(){
+public void setId(Integer id){
     this.id=id;
 }
 public String getName(){
     return name;
 }
-public void setName(){
+public void setName(String name){
     this.name=name;
 }
-public String getName(){
-    return name;
+public String getEmail(){
+    return email;
 }
-public void setName(){
-    this.name=name;
+public void setEmail(){
+    this.email=email;
+}
+public String getPassword(){
+    return password;
+}
+public void setPassword(){
+    this.passowrd=password;
+}
+public String getDate(){
+    return date;
+}
+public void setDate(){
+    this.date=date;
 }
 
 
