@@ -1,5 +1,7 @@
 package com.example.demo.entity
 import java.sql.Date
+import jakarta.persistence.entity
+import jakarta
 @Entity
 public class StudentEntity(){
 
@@ -40,7 +42,7 @@ public void setDate(Date created){
     this.created=created;
 }
 
-
+public StudentEntity
 
 
 
