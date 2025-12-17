@@ -8,7 +8,7 @@ import com.example.demo.service.StudentService;
 
 @RestController
 public class StudentController{
-@Autowired StudentService ser//here actually StudentServiceImpl should be used ut we use StudentService as we dont want to show the logic to user for security purposes
+@Autowired StudentService ser;//here actually StudentServiceImpl should be used ut we use StudentService as we dont want to show the logic to user for security purposes
 @PostMapping("/post")
 public StudentEntity sendData(@RequestBody StudentEntity stu){
     return ser.postData(stu);
