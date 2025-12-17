@@ -1,11 +1,11 @@
 package com.example.demo.Entity;
-import java.sql.Date;
+import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistece.GeneratedValue;
 import jakarta.persistence.GenerationType;
 @Entity
-public class StudentEntity(){
+public class StudentEntity{
 @Id 
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Integer id;
@@ -49,11 +49,11 @@ public StudentEntity(){
     
 
 } 
-public StudentEntity(Integer id,String name,String email,String passowrd,Date created){
+public StudentEntity(Integer id,String name,String email,String password,Date created){
       this.id=id;
       this.name=name;
       this.email=email;
-      this.passowrd=password;
+      this.password=password;
       this.created=created;
 }
 
