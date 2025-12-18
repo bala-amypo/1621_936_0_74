@@ -22,4 +22,9 @@ public class Studentserviceimpl implements Studentservice{
   public List<Studententity>getAllData(){
        return student.findAll();
   }
+  @Override
+    public String DeleteData(@PathVariable int id){
+       student.deleteById(id);
+       return "" 
+    }
 }
