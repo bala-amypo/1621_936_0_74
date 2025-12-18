@@ -31,4 +31,8 @@ public class Studentserviceimpl implements Studentservice{
   public Studententity findData(int id){
       return student.findById(id).orElse(null);
      }
+  @Override
+  public Studententity UpdateData(int id,Studententity stu){
+   return
+  }
 }
