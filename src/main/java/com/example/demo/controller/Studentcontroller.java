@@ -2,6 +2,7 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
@@ -30,5 +31,9 @@ public String deleteval(@PathVariable int id){
 @GetMapping("/getid{id}")
 public Studententity getdataid(@PathVariable int id){
     return ser.findData(id);
+}
+@PutMapping("/put/{id}")
+public Studententity Putdata(@PathVariable int id,@RequestBody Studententity entity){
+    return ser.UpdateData(id,entity);
 }
 }
