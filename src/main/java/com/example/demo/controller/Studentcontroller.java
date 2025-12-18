@@ -21,4 +21,6 @@ public Studententity dopost(@RequestBody Studententity stu){
 public List<Studententity> getval(){
     return ser.getAllData();
 }
+@DeleteMapping("/delete/{id}")
+public String 
 }
