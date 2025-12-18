@@ -22,7 +22,7 @@ public class ValidationEntity{
    @NotNull(message="Password is mandatory")
    private String password;
    @Max(30)
-   @Positive
+   @Positive(message="Age must be a positive number")
    private int age;
      
 
@@ -56,18 +56,18 @@ public class ValidationEntity{
    public void setAge(int age){
     this.age=age;
    }
-   public Studententity(Long id,
+   public ValidationEntity(Long id,
     @NotNull @Size(min=2,max=10,message="must be 2 to 10 characters") String name,
     @Size(min=2,max=10,message="must be 2 to 10 characters") @NotNull(message="Password is mandatory") String password ,
     @Email(message="Email is not valid")  String email ,
-    @Max(30) @Positive  int age){
+    @Max(30) @Positive(message="Age must be a positive number")  int age){
            this.id=id;
            this.name=name;
            this.password=password;
            this.email=email;
            this.age=age;
    }
-   public Studententity(){
+   public ValidationEntity(){
 
    }
 }
