@@ -20,6 +20,6 @@ public Studententity dopost(@RequestBody Studententity stu){
 }
 @GetMapping("/get")
 public List<Studententity> getval(){
-    return service.getAllData();
+    return ser.getAllData();
 }
 }
