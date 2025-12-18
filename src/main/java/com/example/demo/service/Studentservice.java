@@ -3,9 +3,9 @@ import com.example.demo.entity.Studententity;
 import java.util.List;
 public interface Studentservice{
     Studententity postdata(Studententity stu);
-      List<Studententity>getAllData();
+    List<Studententity>getAllData();
     String DeleteData(int id);
-    Studententity putdata
+    Studententity findData(int id);
 
     
 }
