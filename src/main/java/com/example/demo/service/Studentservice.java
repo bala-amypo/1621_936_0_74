@@ -6,7 +6,7 @@ public interface Studentservice{
     List<Studententity>getAllData();
     String DeleteData(int id);
     Studententity findData(int id);
-
+    Studententity putData()
     
 }
   
