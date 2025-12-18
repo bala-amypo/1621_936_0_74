@@ -20,6 +20,6 @@ public class Studentserviceimpl implements Studentservice{
  }
  @Override
   public List<Studententity>getAllData(){
-       return student.findAll(stu);
+       return student.findAll();
   }
 }
