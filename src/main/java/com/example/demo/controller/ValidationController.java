@@ -16,8 +16,8 @@ import jakarta.validation.Valid;
 public class ValidationController{
     @Autowired ValidationService ser;
 @PostMapping("/postt")
-public ValidationEntity dopost( @Valid @RequestBody ValidationEntity stu){
-    return ser.postdata(stu);
+public ValidationEntity dopost( @Valid @RequestBody ValidationEntity stuu){
+    return ser.postdata(stuu);
 
 }
 
