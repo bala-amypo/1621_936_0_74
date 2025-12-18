@@ -29,7 +29,7 @@ public class ValidationEntity{
  public Long getId(){
         return id;
     }
-    public void setId(Integer id){
+    public void setId(Long id){
        this.id=id;
     }
    public String getName(){
@@ -53,15 +53,19 @@ public class ValidationEntity{
     public int getAge(){
     return age;
    }
-   public void setCreated(Date created){
-    this.created=created;
+   public void setAge(int age){
+    this.age=age;
    }
-   public Studententity(Integer id, String name, String password , String email , Date created){
+   public Studententity(Long id,
+    @NotNull @Size(min=2,max=10,message="must be 2 to 10 characters") String name,
+    @Size(min=2,max=10,message="must be 2 to 10 characters") @NotNull(message="Password is mandatory") String password ,
+    @Email(message="Email is not valid")  String email ,
+    @Max(30) @Positive  int age){
            this.id=id;
            this.name=name;
            this.password=password;
            this.email=email;
-           this.created=created;
+           this.age=age;
    }
    public Studententity(){
 
