@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class TimeStampServiceImpl implements TimeStampService{
-      @Autowired Repository student;
+      @Autowired TimeStampRepository student;
       //save()
       //findall()
       //findById()
