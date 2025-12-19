@@ -24,8 +24,8 @@ public class TimeStamp{
     private LocalDateTime CreateAt;
     private LocalDateTime UpdateAt;
     @PrePersist
-    public void Oncreate(){
-        LocalDateTime now= LocalDateTime().now();
+     LocalDateTime now= LocalDateTime().now();
+    p void Oncreate(){
         this.CreateAt=now;
         this.UpdateAt=now;
     }
