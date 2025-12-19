@@ -16,8 +16,8 @@ import java.util.List;
 public class  TimeStampController{
     @Autowired  TimeStampService ser;
 @PostMapping("/posttt")
-public  TimeStamp dopost(@RequestBody TimeStamp stu){
-    return ser.posttdata(stu);
+public  TimeStamp dopost(@RequestBody TimeStamp stuuu){
+    return ser.posttdata(stuuu);
 
 }
 @GetMapping("/gettt")
