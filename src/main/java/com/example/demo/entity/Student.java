@@ -11,13 +11,12 @@ import lombok.NoArgsConstructor;;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Studententity{
+public class Student{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String Name;
     private String Address;
     private String email;                 
-    private Date created;
-
+  
 }
