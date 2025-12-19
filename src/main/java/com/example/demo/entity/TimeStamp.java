@@ -20,8 +20,13 @@ public class TimeStamp{
     private Long id;
     private String Name;
     private String Email;
-    private LocalDateTime createAt;
+    private LocalDateTime CreateAt;
     private LocalDateTime UpdateAt;
-    
+    @PrePersist
+    public void Oncreate(){
+        LocalDateTime now=new LocalDateTime();
+        this.createAt=now;
+        this.UpdateAt=now;
+    }
 
 }
