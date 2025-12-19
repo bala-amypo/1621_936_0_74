@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;;
+import lombok.NoArgsConstructor;
 @Entity
 @Data
 @AllArgsConstructor
@@ -16,6 +16,8 @@ public class StudentDetails{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String StudentIdCard;  
-    private int idno;               
+    private int idno;  
+    @OneToOne
+    private StudentDetails student;             
   
 }
