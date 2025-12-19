@@ -32,6 +32,7 @@ public class TimeStamp{
     }
     @PreUpdate
     protected void OnUpdate(){
+        LocalDateTime now= LocalDateTime().now();
        this.UpdateAt=now;
     }
 
