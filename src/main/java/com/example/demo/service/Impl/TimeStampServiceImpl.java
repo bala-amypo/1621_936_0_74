@@ -15,7 +15,7 @@ public class TimeStampServiceimpl implements TimeStampService{
       //deleteById()
       //existsById()
  @Override
- public TimeStamp postdata(TimeStamp stuuu){
+ public TimeStamp posttdata(TimeStamp stuuu){
     return student.save(stuuu);
  }
  @Override

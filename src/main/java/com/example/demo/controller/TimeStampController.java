@@ -13,8 +13,8 @@ import java.util.List;
 
 
 @RestController
-public class Studentcontroller{
-    @Autowired Studentservice ser;
+public class  TimeStampController{
+    @Autowired  TimeStampService ser;
 @PostMapping("/posttt")
 public  TimeStamp dopost(@RequestBody TimeStamp stu){
     return ser.posttdata(stu);
