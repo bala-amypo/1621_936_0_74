@@ -7,6 +7,8 @@ import java.time.LocalDateTime;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.PrePersist;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -20,5 +22,6 @@ public class TimeStamp{
     private String Email;
     private LocalDateTime createAt;
     private LocalDateTime UpdateAt;
+    
 
 }
