@@ -8,7 +8,7 @@ import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
 import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.DeleteMapping;
-//import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PathVariable;
 //import java.util.List;
 import jakarta.validation.Valid;
 
@@ -21,7 +21,7 @@ public ValidationEntity dopost( @Valid @RequestBody ValidationEntity stuu){
 
 }
 @GetMapping("/getid{id}")
-public Studententity getdataidd(@PathVariable int id){
+public Studententity getdataid(@PathVariable int id){
     return ser.findDataa(id);
 }
 
