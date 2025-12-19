@@ -15,8 +15,8 @@ public class Studententity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private String name;
-    private String password;
+    private String Name;
+    private String Address;
     private String email;                 
     private Date created;
 
