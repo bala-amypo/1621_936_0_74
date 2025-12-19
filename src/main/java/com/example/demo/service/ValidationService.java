@@ -4,7 +4,7 @@ import com.example.demo.entity.ValidationEntity;
 public interface ValidationService{
     ValidationEntity postdata(ValidationEntity stuu);
    // List<ValidationEntity>getAllData();
-    ValidatonEntity findData(int id);
+    ValidatonEntity findDataa(int id);
     
 }
   
