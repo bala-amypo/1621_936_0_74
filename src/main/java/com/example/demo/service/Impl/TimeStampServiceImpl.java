@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 @Service
-public class TimeStampServiceimpl implements TimeStampService{
-      @Autowired StudentRepository student;
+public class TimeStampServiceImpl implements TimeStampService{
+      @Autowired Repository student;
       //save()
       //findall()
       //findById()
