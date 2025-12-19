@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 @Entity
 @Data
@@ -29,6 +30,8 @@ public class TimeStamp{
         this.UpdateAt=now;
     }
     @PreUpdate
-    public
+    public void OnUpdate(){
+       this.UpdateAt=now;
+    }
 
 }
