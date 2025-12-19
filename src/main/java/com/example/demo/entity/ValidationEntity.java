@@ -10,7 +10,7 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 import lombok.Data;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;;
+import lombok.NoArgsConstructor;
 @Entity
 @Data
 @AllArgsConstructor
