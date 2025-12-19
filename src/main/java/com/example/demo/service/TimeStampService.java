@@ -3,7 +3,7 @@ import com.example.demo.entity. TimeStamp;
 import java.util.List;
 public interface TimeStampService{
       TimeStamp posttdata( TimeStamp stuuu);
-    List< TimeStamp>getAllDataa();
+       List< TimeStamp>getAllDataa();
     //TimeStamp findDataaa(Long id);
     
 }
