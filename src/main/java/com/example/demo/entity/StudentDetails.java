@@ -15,6 +15,7 @@ public class StudentDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private int idno;                 
+    private String StudentIdCard;  
+    private int idno;               
   
 }
