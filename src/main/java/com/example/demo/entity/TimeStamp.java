@@ -27,6 +27,7 @@ public class TimeStamp{
     
     public void Oncreate(){
         LocalDateTime now= LocalDateTime.now();
+        if(this.CreateAt==null
         this.CreateAt=now;
         this.UpdateAt=now;
     }
